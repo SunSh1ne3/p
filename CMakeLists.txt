@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.15) # Проверка версии CMake.
 									 # Если версия установленой программы
 									 # старее указаной, произайдёт аварийный выход.
 
-set(PROJECT_NAME Tron)				 # имя проекта		 
+set(PROJECT_NAME Sapper)				 # имя проекта		 
 project("${PROJECT_NAME}")
 
 
@@ -35,3 +35,5 @@ target_link_libraries("${PROJECT_NAME}" sfml-graphics-s-d
 						  vorbisfile
 						  vorbis
 						  ogg)
+
+file(COPY "images" DESTINATION "/")
